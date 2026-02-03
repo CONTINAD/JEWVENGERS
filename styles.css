@@ -256,8 +256,10 @@ body {
 }
 
 .hero-content {
-    max-width: 600px;
+    max-width: 90vw;
+    width: 100%;
     text-align: center;
+    padding: 0 1rem;
 }
 
 .hero-badge {
@@ -310,7 +312,7 @@ body {
 
 .title-main {
     display: block;
-    font-size: clamp(3rem, 8vw, 5rem);
+    font-size: clamp(2rem, 6vw, 4.5rem);
     font-weight: 900;
     background: var(--gradient-gold);
     -webkit-background-clip: text;
@@ -318,6 +320,8 @@ body {
     background-clip: text;
     text-shadow: 0 0 60px rgba(212, 175, 55, 0.5);
     animation: glow-text 3s ease-in-out infinite alternate;
+    word-break: keep-all;
+    white-space: nowrap;
 }
 
 @keyframes glow-text {
